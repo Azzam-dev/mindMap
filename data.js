@@ -1,4 +1,4 @@
-let x = {
+let nodeTree = {
   name: "x",
   children: [
     {
