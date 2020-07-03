@@ -1,7 +1,7 @@
 #myCanvas {
-  position: relative;
+  position: absolute;
   top: auto;
-  left: 50px;
+  left: 90px;
   height: 300px;
   width: 80%;
   border-radius: 10px;
