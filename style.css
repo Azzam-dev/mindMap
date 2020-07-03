@@ -1,3 +1,6 @@
+body{
+  background-color: lightblue;
+}
 #myCanvas {
   position: absolute;
   top: auto;
@@ -5,5 +8,13 @@
   height: 300px;
   width: 80%;
   border-radius: 10px;
-  border: 1px solid black;
+  border: 1px solid blue;
+
+
+
+}
+h1{
+  color: #686868;
+  
+
 }
