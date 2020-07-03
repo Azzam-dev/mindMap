@@ -1,0 +1,9 @@
+#myCanvas {
+  position: relative;
+  top: auto;
+  left: 50px;
+  height: 300px;
+  width: 80%;
+  border-radius: 10px;
+  border: 1px solid black;
+}
