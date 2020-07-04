@@ -5,7 +5,7 @@ let canvasYCenter = canvas.height / 2;
 ctx.strokeStyle = "#00f";
 ctx.fillStyle = "#00f";
 ctx.textAlign = "center";
-let radius = 50
+let radius = 30
 ctx.font = `${radius / 2.5}px Arial`;
 let margin = radius * 1.1
 let level = radius * 2 + margin
@@ -21,14 +21,13 @@ function drawLine(x1, y1, x2, y2) {
   ctx.lineTo(x2, y2);
   ctx.stroke();
 }
-
-
-drawLine(canvasXCenter, level * 1 + radius, canvasXCenter - margin * 3, level * 2 - radius); //A
+function drawTree(node){
+  drawLine(canvasXCenter, level * 1 + radius, canvasXCenter - margin * 3, level * 2 - radius); //A
 drawLine(canvasXCenter, level * 1 + radius, canvasXCenter - margin, level * 2 - radius); //B
 drawLine(canvasXCenter, level * 1 + radius, canvasXCenter + margin, level * 2 - radius); //C
 drawLine(canvasXCenter, level * 1 + radius, canvasXCenter + margin * 3, level * 2 - radius); //D
 drawLine(canvasXCenter - margin , level * 2 + radius , canvasXCenter - margin, level * 3 - radius); //O
-
+drawLine(canvasXCenter + margin,level*2+radius,canvasXCenter + margin,level *3-radius)
 
 drawCircle(canvasXCenter, level * 1 , "X"); //X
 drawCircle(canvasXCenter - margin * 3 , level * 2 , "A") //A
@@ -40,3 +39,7 @@ drawCircle(canvasXCenter - margin, level * 3 , "O"); //O
 
 
 
+drawCircle(canvasXCenter + margin,level*3,"e")
+}
+
+drawTree()
