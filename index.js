@@ -19,14 +19,15 @@ function drawLine(x1, y1, x2, y2) {
   ctx.stroke();
 }
 
-drawCircle(canvasXCenter, level * 1);
+
+drawLine(canvasXCenter, level * 1 + radius, canvasXCenter - margin * 3, level * 2 - radius); //A
+drawLine(canvasXCenter, level * 1 + radius, canvasXCenter - margin, level * 2 - radius); //B
 drawLine(canvasXCenter, level * 1 + radius, canvasXCenter + margin, level * 2 - radius); //C
 drawLine(canvasXCenter, level * 1 + radius, canvasXCenter + margin * 3, level * 2 - radius); //D
-drawLine(canvasXCenter, level * 1 + radius, canvasXCenter - margin, level * 2 - radius); //B
 drawLine(canvasXCenter - margin , level * 2 + radius , canvasXCenter - margin, level * 3 - radius); //O
-drawLine(canvasXCenter, level * 1 + radius, canvasXCenter - margin * 3, level * 2 - radius); //A
 
 
+drawCircle(canvasXCenter, level * 1); //X
 drawCircle(canvasXCenter - margin * 3 , level * 2) //A
 drawCircle(canvasXCenter - margin, level * 2); //B
 drawCircle(canvasXCenter + margin, level * 2); //C
